@@ -13,6 +13,9 @@ function updateDisplay() {
     locDisplay.textContent = Math.floor(locCount);
     juniorDevCountDisplay.textContent = juniorDevCount;
     juniorDevCostDisplay.textContent = juniorDevCost;
+    
+    // Enable/Disable buy button based on cost
+    buyJuniorDevBtn.disabled = locCount < juniorDevCost;
 }
 
 writeCodeBtn.addEventListener('click', () => {

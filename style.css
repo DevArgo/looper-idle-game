@@ -1,0 +1,80 @@
+body {
+    background-color: #0a0a0a;
+    color: #00ff00;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+#game-container {
+    text-align: center;
+    border: 1px solid #00ff00;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #00ff00;
+}
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#write-code-btn {
+    background-color: #00ff00;
+    color: #0a0a0a;
+    border: none;
+    padding: 1rem 2rem;
+    font-family: inherit;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 1rem 0;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+#write-code-btn:hover {
+    background-color: #00cc00;
+}
+
+#write-code-btn:active {
+    transform: scale(0.95);
+}
+
+#upgrades-container {
+    margin-top: 2rem;
+    border-top: 1px solid #00ff00;
+    padding-top: 1rem;
+    width: 100%;
+}
+
+.upgrade-item {
+    border: 1px solid #00ff00;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+button[id^="buy-"] {
+    background-color: transparent;
+    color: #00ff00;
+    border: 1px solid #00ff00;
+    padding: 0.5rem 1rem;
+    font-family: inherit;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button[id^="buy-"]:hover:not(:disabled) {
+    background-color: #00ff00;
+    color: #0a0a0a;
+}
+
+button[id^="buy-"]:disabled {
+    border-color: #004400;
+    color: #004400;
+    cursor: not-allowed;
+}
