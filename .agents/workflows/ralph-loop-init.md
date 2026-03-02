@@ -1,0 +1,12 @@
+---
+description: Utility to initialize the Ralph Loop base documents
+---
+This utility workflow ensures that the necessary files for the Ralph Loop exist in the project, and initializes the repository.
+
+1. Check if the directory is a git repository (e.g., check for `.git` folder). If not, initialize it using `git init`.
+2. Create a `docs` directory if it doesn't already exist.
+3. Check if `docs/prd.md` (Product Requirement Document) exists. If not, create it with a basic template containing:
+   - Project Goal
+   - Objectives
+   - Acceptance Criteria
+4. Check if `docs/progress.md` exists. If not, create it with an initial status indicating the start of the project.
