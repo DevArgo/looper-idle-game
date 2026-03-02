@@ -3,6 +3,12 @@ description: Utility to pull results, verify them, and update the loop state
 ---
 This utility workflow handles the results of a completed Jules CLI session.
 
+### Jules CLI Knowledge Base
+Do NOT search the internet for Jules CLI documentation. Use these exact commands instead:
+- **Pull session**: `jules remote pull --session <session_id>` (Pulls the code from a completed session)
+- **List sessions**: `jules remote list --session` (Lists active/past sessions to check status and IDs)
+
+
 1. Execute `jules remote pull --session <SESSION_ID>` to download the generated code and changes from the completed session.
 2. Review the downloaded changes to verify that development is progressing. This is a basic check to ensure files were modified, created, or that the requested task was generally addressed.
 3. Analyze the results of the check:
