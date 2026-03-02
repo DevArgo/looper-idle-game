@@ -1,7 +1,15 @@
 ---
 description: Start and orchestrate the Ralph Loop AI agent process
 ---
+
 This workflow orchestrates the entire "invio->controllo->merge->verifica" cycle using Jules CLI, forming a Ralph Loop. It relies on several utility workflows to handle specific steps.
+
+### Important: Files to Reference
+Before starting, always ensure you are aware of the following key documents (read them if necessary):
+- **`docs/prd.md`**: The Product Requirement Document. Read this to understand the main goals and requirements.
+- **`docs/progress.md`**: The Progress Tracker. Read this to know the current iteration state, successes from the previous loop, and error logs.
+- **`.agents/workflows/ralph-loop*.md`**: The Ralph Loop workflow definitions themselves. Read these to ensure you understand the boundaries, constraints, and exact steps of the loop mechanics.
+
 
 0. Check if this is the first run and initialize if necessary:
 /ralph-loop-init
