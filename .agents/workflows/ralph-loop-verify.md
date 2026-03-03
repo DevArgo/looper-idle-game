@@ -7,7 +7,6 @@ This utility workflow handles the results of a completed Jules CLI session.
 ### Jules CLI Knowledge Base
 Do NOT search the internet for Jules CLI documentation. Use these exact commands instead:
 - **Pull session**: `jules remote pull --session <session_id>` (Pulls the code from a completed session)
-- **List sessions**: `jules remote list --session` (Lists active/past sessions to check status and IDs)
 
 0. You can find the session_id in `docs/progress.md`.
 1. Execute `jules remote pull --session <SESSION_ID>` to download the generated code and changes from the completed session.
